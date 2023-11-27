@@ -1,0 +1,122 @@
+*
+{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html,body
+{
+height:100%;
+width:100%;
+}
+.main{
+    width: 100%;
+    /* background-color: red; */
+}
+.menu{
+    height: 100vh;
+    width: 100%;
+    background-color: lightcoral;
+}
+.menu .btn{
+    position: absolute;
+    left: -350px;
+    padding:20px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #fff;
+}
+.menu .btn .ri-menu-line{
+    position: relative;
+    /* top: 0; */
+    z-index: 99;
+    font-size: 20px;
+}
+.menu .card{
+    position: absolute;
+    left: -400px;
+    min-height: 500px;
+    top: 50px;
+    width: 400px;
+    background-color: #fff;
+}
+.menu .card .gh{
+    display: none;
+}
+.first{
+    min-height: 100vh;
+    width: 80%;
+    background-color: rgb(234, 250, 250);
+    margin: 0 auto;
+}
+.faq {
+    background-color: transparent;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+  .faq.active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  /* .faq.active::before {
+    position: absolute;
+    content: '';
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    background-color: red;
+    transform: rotateY(180deg);
+  } */
+  h3 {
+    margin: 0 35px 0 0;
+  }
+  
+ p {
+    display: none;
+    margin: 30px 0 0;
+    /* background-color: red; */
+  }
+  .faq.active p {
+    display: block;
+  }
+  .faq.active::before,
+/* .faq.active::after {
+  content: '\f075';
+  font-family: 'Font Awesome 5 Free';
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+} */
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90%;
+    padding: 10px 20px;
+}
+button i:nth-last-child(1) {
+    display: none;
+  }
+  
+  .faq.active button .fa-times {
+    color: #fff;
+    display: block;
+  }
+  .faq.active button i:nth-last-child(2) {
+    display: none;
+  }
+  .faq.active button {
+    background-color: #9fa4a8;
+  }

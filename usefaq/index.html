@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <div class="btn"><i class="ri-menu-line"></i></div>
+         <div class="card">
+          <button class="gh active">
+            firsy
+          </button>
+          <button class="gh">
+            second
+          </button>
+          <button class="gh">
+            third
+          </button>
+          <button class="gh">
+            four
+          </button>
+          <button class="gh">
+            five
+          </button>
+         </div>
+        </div>
+        <div class="first">
+          <div class="faq active">
+            <h3>What do you call someone with no body and no nose?</h3>
+            <p>Nobody knows.</p>
+            <button>
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="faq">
+            <h3>What do you call someone with no body and no nose?</h3>
+            <p>Nobody knows.</p>
+            <button>
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="faq">
+            <h3>What do you call someone with no body and no nose?</h3>
+            <p>Nobody knows.</p>
+            <button>
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="faq">
+            <h3>What do you call someone with no body and no nose?</h3>
+            <p>Nobody knows.</p>
+            <button>
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="faq">
+            <h3>What do you call someone with no body and no nose?</h3>
+            <p>Nobody knows.</p>
+            <button>
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="faq">
+            <h3>What do you call someone with no body and no nose?</h3>
+            <p>Nobody knows.</p>
+            <button>
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+    </div>
+    <script>
+//         const toggles = document.querySelectorAll('button')
+
+// toggles.forEach(toggle => {
+//     toggle.addEventListener('click', (e) => {
+      
+//         toggle.parentNode.classList.toggle('active')
+//     })
+// })
+document.querySelectorAll('button').forEach(toggle=>{
+toggle.addEventListener('click', (e) => {
+    toggle.parentElement.classList.toggle('active')
+})
+})
+var dusra=0
+document.querySelectorAll('.gh').forEach(function(val){
+
+document.querySelector('.ri-menu-line').addEventListener('click', (e) => {
+    if(dusra==0){
+    document.querySelector('.btn').style.left='0'
+val.style.display='block'
+    document.querySelector('.card').style.left='0'
+    dusra=1 
+}else{
+    document.querySelector('.btn').style.left='-350px'
+    document.querySelector('.card').style.left='-400px'
+    val.style.display='none'
+
+    dusra=0  
+}
+})
+})
+    </script>
+</body>
+</html>
